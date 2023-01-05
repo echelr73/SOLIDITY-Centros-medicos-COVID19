@@ -33,11 +33,11 @@
 	},
 	"sources": {
 		"OMS/oms.sol": {
-			"keccak256": "0x23671c5be5823c2f016e269de880268ed5e9fdff048858339d43cb37375df3b5",
+			"keccak256": "0x3e2f0de8eb6c4f8c3893fe908a4ce5e83e9c22b4a817375d2a4cfa796b328e51",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ad9bb5d52a83cf54e06d557aee212a4fa42f50c92b8da7b50d737aab547fe66d",
-				"dweb:/ipfs/QmU5dnnXspkX1eyAjXSoWB2tAA9E891bpekHLQB95KtTTG"
+				"bzz-raw://426986415cf13b5b8c32b07b27ec080401bb7943780f20907d3e3606d694cea5",
+				"dweb:/ipfs/QmRXACVdGYGHrqiUH8MM4K91hQbCvZHtDKig66wN6W2H1u"
 			]
 		}
 	},

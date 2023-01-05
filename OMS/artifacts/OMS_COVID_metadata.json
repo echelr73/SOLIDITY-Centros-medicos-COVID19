@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "OMS",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"OMS/oms.sol": "OMS_COVID"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"OMS/oms.sol": {
+			"keccak256": "0xb1f0e860888b621b8097a206711b412763d0086d9a43620acc96eac294c9737d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://86e11cdd747ebf4ce9b5c10af370fdeda6e48c83bd9b09e28b34a655da6ef2a1",
+				"dweb:/ipfs/QmXZouPiF2AV81ppWcEEx7VUtLiHhmtzkY3vLrNxunC6n2"
+			]
+		}
+	},
+	"version": 1
+}
