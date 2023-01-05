@@ -21,15 +21,15 @@
 				"inputs": [
 					{
 						"indexed": false,
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					},
-					{
-						"indexed": false,
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
 					}
 				],
 				"name": "NuevoResultado",
@@ -59,6 +59,29 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idPersona",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_resultadoCOVID",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_codigoIPFS",
+						"type": "string"
+					}
+				],
+				"name": "ResultadoPruebaCOVID",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -90,11 +113,11 @@
 	},
 	"sources": {
 		"OMS/oms.sol": {
-			"keccak256": "0xb9ac5caeaa900668abd1b48ad43fd560f342867db4deaae9e1b6ca88225cd28b",
+			"keccak256": "0x5407d87b5dc51edd0d3b5675f242eaaef50ca89c629df40eba5b9b6b2d487970",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://66af80a4afe419f88a85a903fb060aacea065ea47385fc7a7168b2996c5c143e",
-				"dweb:/ipfs/QmUKe2iW1t46ZLUBW43ywkrw6NJN7wNFST51LG2H1tJN6e"
+				"bzz-raw://23e8aea82b82fb4f26b6e40c595e943cf37a3a70298f14705b91a2fba6b00211",
+				"dweb:/ipfs/Qmc1ZropXNGmvGiuz3Z9EgSu95PTanADDfApPLya7JX3C3"
 			]
 		}
 	},
