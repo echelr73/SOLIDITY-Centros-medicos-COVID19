@@ -21,7 +21,11 @@ contract OMS_COVID{
     //Array de direcciones que almacene los centros de salud validados
     address [] public direcciones_contratos_salud;
 
+    //Array de las direcciones que soliciten acceso
+    address [] Solicitudes;
+
     //Eventos
+    event SolicitudAcceso(address);
     event NuevoCentroValidado(address);
     event NuevoContrato(address, address);
 
@@ -29,6 +33,19 @@ contract OMS_COVID{
     modifier UnicamenteOMS(address _direccion){
         require(_direccion == OMS, "No tienes permisos para realizar esta funcion.");
         _;
+    }
+
+    //Funcion para solicitar acceso al sistema medico
+    function SolicitarAcceso() public{
+        //Almacenar la direccion en el array de solicitudes
+        Solicitudes.push(msg.sender);
+        //Emision del evento
+        emit SolicitudAcceso(msg.sender);
+    }
+
+    //Funcion para visualizar las direcciones que han solicitado este acceso
+    function VisualizarSolicitudes() public view UnicamenteOMS(msg.sender) returns( address[] memory){
+        return Solicitudes;
     }
 
     //Funcion para validar nuevos centros de salud que puedan autogestionarse -> Unicamente OMS

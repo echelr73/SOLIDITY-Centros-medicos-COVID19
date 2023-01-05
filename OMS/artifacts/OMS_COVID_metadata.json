@@ -43,6 +43,19 @@
 				"type": "event"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "SolicitudAcceso",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -70,6 +83,26 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "SolicitarAcceso",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "VisualizarSolicitudes",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
 					}
 				],
 				"stateMutability": "view",
@@ -123,11 +156,11 @@
 	},
 	"sources": {
 		"OMS/oms.sol": {
-			"keccak256": "0xe3eff1f30babcb934a3d7cdfb8fc7a8a0488e590b5c79692a86bd2efbad2d44f",
+			"keccak256": "0x05a9efe6f401644dbeeb465b323e0d81df0e95fed01b266fa7263958fbba61c4",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://e5f51bcf156d877765f3a3fccad88211d15c829298c995868435ac9a14c25682",
-				"dweb:/ipfs/QmXXssGceEVAXKVaDQKRhQpzNVuBfo4pVS4aHewQovUZQQ"
+				"bzz-raw://902d63cdc5e739244f7fce4bf8652bb468a6439d79300be898ef0f9ad7980fb3",
+				"dweb:/ipfs/QmXemRpjrsVvMqzys2yMwaSo58ZsqDHdWqW3JD8EDFPfuG"
 			]
 		}
 	},
