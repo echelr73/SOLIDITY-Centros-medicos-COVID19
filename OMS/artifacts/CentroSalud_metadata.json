@@ -17,6 +17,25 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"name": "NuevoResultado",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "DireccionCentroSalud",
 				"outputs": [
@@ -71,11 +90,11 @@
 	},
 	"sources": {
 		"OMS/oms.sol": {
-			"keccak256": "0x05a9efe6f401644dbeeb465b323e0d81df0e95fed01b266fa7263958fbba61c4",
+			"keccak256": "0xb9ac5caeaa900668abd1b48ad43fd560f342867db4deaae9e1b6ca88225cd28b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://902d63cdc5e739244f7fce4bf8652bb468a6439d79300be898ef0f9ad7980fb3",
-				"dweb:/ipfs/QmXemRpjrsVvMqzys2yMwaSo58ZsqDHdWqW3JD8EDFPfuG"
+				"bzz-raw://66af80a4afe419f88a85a903fb060aacea065ea47385fc7a7168b2996c5c143e",
+				"dweb:/ipfs/QmUKe2iW1t46ZLUBW43ywkrw6NJN7wNFST51LG2H1tJN6e"
 			]
 		}
 	},

@@ -15,6 +15,9 @@ contract OMS_COVID{
     //Mapping para relacionar los centros de salud (direccion/address) con la validez del sistema de gestion
     mapping (address => bool) Validacion_CentroSalud;
 
+    //Relacionar una direccion de un centro de salud con su contrato
+    mapping(address => address) public CentroSalud_contrato;
+
     //Ejemplo 1: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
     //Ejemplo 2: 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
 
@@ -64,6 +67,8 @@ contract OMS_COVID{
         address contrato_CentroSalud = address (new CentroSalud(msg.sender));
         //Almacenar la direccion del contrato en el array
         direcciones_contratos_salud.push(contrato_CentroSalud);
+        //Relacion entre el centro de salud y su contrato
+        CentroSalud_contrato[msg.sender] = contrato_CentroSalud;
         //Emision del evento
         emit NuevoContrato(contrato_CentroSalud, msg.sender);
     }
@@ -71,12 +76,24 @@ contract OMS_COVID{
 }
 
 //----------------------------------------------------------------------------------------------------------------
+//Contrato autogestionable por el centro de Salud
 contract CentroSalud{
 
+    //Direcciones iniciales
     address public DireccionCentroSalud;
     address public DireccionContrato;
+
     constructor(address _direccion) public {
         DireccionCentroSalud = _direccion;
         DireccionContrato = address(this);
     }
+
+    //Mapping que relaciona una identificacion de una persona con un resultado de PCR
+    mapping( bytes32 => bool) ResultadoCOVID;
+
+    //Relaciona el hash de la prueba con el codigo del IPFS
+    mapping(bytes32 => string) ResultadoCOVID_IPFS;
+
+    //Eventos
+    event NuevoResultado(string, bool);
 }
