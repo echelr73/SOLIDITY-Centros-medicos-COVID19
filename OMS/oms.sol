@@ -115,4 +115,20 @@ contract CentroSalud{
         //Emision de un evento
         emit NuevoResultado(_resultadoCOVID, _codigoIPFS);
     }
+
+    //Funcion  que permita la visualizacion de los resultado
+    function VisualizarResultados(string memory _idPersona) public view returns(string memory, string memory){
+        //hash de la idPersona
+        bytes32 hash_idPersona = keccak256(abi.encodePacked(_idPersona));
+        // Retorno de un bool como un string
+        string memory resultadoPrueba;
+
+        if(ResultadosCOVID[hash_idPersona].diagnostico == true) {
+            resultadoPrueba = "Positivo";
+        }
+        else {
+            resultadoPrueba = "Negativo";
+        } 
+        return (resultadoPrueba, ResultadosCOVID[hash_idPersona].codigoIPFS);
+    }
 }

@@ -83,6 +83,30 @@
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idPersona",
+						"type": "string"
+					}
+				],
+				"name": "VisualizarResultados",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -113,11 +137,11 @@
 	},
 	"sources": {
 		"OMS/oms.sol": {
-			"keccak256": "0x5407d87b5dc51edd0d3b5675f242eaaef50ca89c629df40eba5b9b6b2d487970",
+			"keccak256": "0x1050b3587462cc299c96f4fb42f4b4cda700ea25f09cc32c76045cbdb06ea043",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://23e8aea82b82fb4f26b6e40c595e943cf37a3a70298f14705b91a2fba6b00211",
-				"dweb:/ipfs/Qmc1ZropXNGmvGiuz3Z9EgSu95PTanADDfApPLya7JX3C3"
+				"bzz-raw://e3d295d7a549831f95852dd5fd981d5e8ff8f4177dfd7ca94bfed559a6affeff",
+				"dweb:/ipfs/QmYMy6n25jZmiyTbenSzeBeLM5YkWSakKLwZCC39zjJbfy"
 			]
 		}
 	},
